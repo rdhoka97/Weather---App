@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background"
+    >
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:background="@color/light_purple"
+
+        android:textColor="@color/white"
+
+        android:textStyle="bold"
+        example:layout_constraintEnd_toEndOf="parent"
+        android:padding="4dp"
+        example:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        example:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/dateText"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        example:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:orientation="horizontal"
+
+        android:id="@+id/layoutNo5"
+
+        example:layout_constraintTop_toBottomOf="@+id/dateText"
+        android:baselineAligned="false"
+        android:layout_height="wrap_content"
+        example:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+
+            android:layout_width="0dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:textSize="35sp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:id="@+id/highLowTemp"
+                />
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+
+                android:textColor="@color/white"
+
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/descriptionOfText"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+
+
+                android:textSize="14sp"
+                android:id="@+id/precipitationProbability"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:id="@+id/indexOfUV"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            >
+
+            <ImageView
+                android:contentDescription="@string/image"
+                android:layout_width="wrap_content"
+
+                android:id="@+id/weatherImage"
+                android:layout_gravity="center"
+
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        example:layout_constraintTop_toBottomOf="@+id/layoutNo5"
+        android:layout_width="match_parent"
+        example:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="4"
+
+        example:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        android:baselineAligned="false"
+
+        android:id="@+id/layoutNo4"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/morningText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/_8am"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/afternoonText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/_1pm"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eveningText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/_5pm"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/_11pm"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

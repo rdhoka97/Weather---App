@@ -1,0 +1,10 @@
+<resources>
+    <string name="nno_internet_connection">\nNo Internet Connection</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="_11pm">11pm</string>
+    <string name="_8am">8am</string>
+    <string name="_1pm">1pm</string>
+    <string name="_5pm">5pm</string>
+    <string name="image">IMAGE</string>
+    <string name="app_name">OpenWeather App</string>
+</resources>

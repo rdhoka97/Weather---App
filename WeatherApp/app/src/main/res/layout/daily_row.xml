@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+
+    android:padding="10dp"
+    android:layout_height="175dp"
+    android:background="#9da2d9"
+    android:id="@+id/linearLayout"
+
+    >
+
+    <TextView
+
+        android:layout_width="match_parent"
+
+        android:id="@+id/dayText"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:id="@+id/timeText"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+
+        android:contentDescription="@string/image"
+        android:id="@+id/weatherImage1"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/temperatureText"
+        android:gravity="center"
+
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+
+        android:id="@+id/descriptionOfText"
+
+
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+
+
+</LinearLayout>
